@@ -20,10 +20,13 @@ while (chute != numeroSecreto) {
         tentativas++;
     }
 }
-if (tentativas > 1) {
-    alert(`Isso aí! Você descobriu o nùmero secreto ${numeroSecreto} com ${tentativas} tentativas.`);
-} else {
-    alert(`Isso aí! Você descobriu o nùmero secreto ${numeroSecreto} com ${tentativas} tentativa.`);
-}
+
+let palavvraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(`Isso aí! Você descobriu o nùmero secreto ${numeroSecreto} com ${tentativas} ${palavvraTentativa}`);
+// if (tentativas > 1) {
+// alert(`Isso aí! Você descobriu o nùmero secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+// } else {
+// alert(`Isso aí! Você descobriu o nùmero secreto ${numeroSecreto} com ${tentativas} tentativa.`);
+// }
 
 
